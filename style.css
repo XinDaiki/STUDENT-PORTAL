@@ -1,0 +1,307 @@
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #0a1d3a;
+    background-image: radial-gradient(circle at top left, #0e2d52, #0a1d3a);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 40px 30px;
+    color: white;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .login-box input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    outline: none;
+  }
+  
+  .login-box input::placeholder {
+    color: #ddd;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00d4ff;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-box button:hover {
+    background-color: #00b5e6;
+  }
+  
+  .portal {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #0a1d3a;
+    overflow-x: hidden;
+    color: white;
+  }
+  
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 0 10px 10px 0;
+    padding-top: 60px;
+    transition: 0.3s ease;
+    z-index: 1;
+  }
+  
+  .sidebar.show {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 12px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #00d4ff;
+    color: black;
+  }
+  
+  .portal-content {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: #0a1d3a;
+    background-image: radial-gradient(circle at top left, #0e2d52, #0a1d3a);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: auto; /* Ensures vertical scrolling */
+  }
+  
+  .login-box {
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    padding: 40px 30px;
+    color: white;
+    width: 320px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .login-box form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .login-box input {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    text-align: center;
+    outline: none;
+  }
+  
+  .login-box input::placeholder {
+    color: #ddd;
+  }
+  
+  .login-box button {
+    width: 100%;
+    padding: 12px;
+    background-color: #00d4ff;
+    border: none;
+    color: black;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  .login-box button:hover {
+    background-color: #00b5e6;
+  }
+  
+  .portal {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background: #0a1d3a;
+    overflow-x: hidden;
+    overflow-y: auto; /* Enable scrolling inside the portal */
+    color: white;
+  }
+  
+  .hamburger {
+    font-size: 30px;
+    cursor: pointer;
+    color: white;
+    padding: 15px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+  }
+  
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    border-radius: 0 10px 10px 0;
+    padding-top: 60px;
+    transition: 0.3s ease;
+    z-index: 1;
+    overflow-y: auto; /* Enables sidebar scrolling if content is long */
+  }
+  
+  .sidebar.show {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .sidebar ul li {
+    padding: 12px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #00d4ff;
+    color: black;
+  }
+  
+  .portal-content {
+    margin-top: 60px;
+    text-align: center;
+    padding: 20px;
+  }
+  /*testing design*/
+
+  /* Full-screen background */
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0f172a, #1e293b, #334155); /* Dark blue gradient */
+    font-family: Arial, sans-serif;
+}
+
+/* Glossy Dark Blue Glassmorphism */
+.glass-container {
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    text-align: center;
+
+    /* Glassmorphism effect */
+    background: rgba(15, 23, 42, 0.6); /* Deep blue transparency */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+
+    color: white;
+}
+
+/* Student info */
+.info {
+    margin: 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    font-size: 18px;
+}
+
+/* Button */
+button {
+    margin-top: 15px;
+    padding: 12px 25px;
+    border: none;
+    background: rgba(255, 255, 255, 0.3);
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.5);
+    color: black;
+}
